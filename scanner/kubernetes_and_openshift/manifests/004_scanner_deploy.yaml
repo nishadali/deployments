@@ -44,7 +44,7 @@ spec:
 #              cpu: 1000m
 #              memory: 512Mi
           command: ["/bin/sh"]
-          args: ["-c", "/opt/aquasec/scannercli daemon --host https://${AQUA_SERVER} --user ${AQUA_SCANNER_USERNAME} --password ${AQUA_SCANNER_PASSWORD} --no-verify"]
+          args: ["-c", "/opt/aquasec/scannercli daemon --host http://${AQUA_SERVER} --user ${AQUA_SCANNER_USERNAME} --password ${AQUA_SCANNER_PASSWORD} --no-verify"]
           env:
             - name: AQUA_SCANNER_LOGICAL_NAME
               valueFrom:
